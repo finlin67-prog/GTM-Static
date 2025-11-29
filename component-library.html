@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTMstack.pro Component Library</title>
+    <link rel="stylesheet" href="/brand-system.css">
+    <style>
+        /* Component Library Styles */
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #0A0F1F;
+        }
+        
+        .component-section {
+            padding: 4rem 2rem;
+            border-bottom: 2px solid #E5E7EB;
+        }
+        
+        .component-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #0A0F1F;
+            margin-bottom: 1rem;
+        }
+        
+        .component-description {
+            color: #3A3F4B;
+            margin-bottom: 2rem;
+        }
+        
+        .component-demo {
+            background: #F5F7FA;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ====================================================
+     TABLE OF CONTENTS
+     ==================================================== -->
+<div style="padding: 3rem; background: #0A0F1F; color: white;">
+    <h1 style="font-size: 3rem; margin-bottom: 1rem;">GTMstack.pro Component Library</h1>
+    <p style="font-size: 1.25rem; color: rgba(255,255,255,0.9);">Reusable HTML/CSS components following the Global Brand System</p>
+    <p style="margin-top: 1rem; color: rgba(255,255,255,0.7);">
+        Theme: "Navigate Your GTM Journey" | Premium Consulting Design
+    </p>
+</div>
+
+<!-- ====================================================
+     1. HERO COMPONENTS
+     ==================================================== -->
+<div class="component-section">
+    <h2 class="component-title">1. Hero Components</h2>
+    
+    <!-- PRIMARY HERO -->
+    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Primary Hero (Homepage, Major Pages)</h3>
+    <div class="component-demo">
+        <section class="relative hero-navy overflow-hidden bg-topographic" style="min-height: 600px; padding: 6rem 3rem;">
+            <div class="absolute inset-0 bg-grid-overlay" style="opacity: 0.3;"></div>
+            <div style="max-width: 1280px; margin: 0 auto; position: relative; z-index: 10;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                    <!-- Left Column: Content -->
+                    <div style="color: white;">
+                        <!-- Badge -->
+                        <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); padding: 0.5rem 1rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 600; margin-bottom: 2rem;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="6"></circle>
+                                <circle cx="12" cy="12" r="2"></circle>
+                            </svg>
+                            Strategic Go-To-Market Leader
+                        </div>
+                        
+                        <!-- Headline -->
+                        <h1 style="font-size: 4rem; font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 1.5rem;">
+                            Navigate Your <span class="text-gradient-brand">GTM Journey</span>
+                        </h1>
+                        
+                        <!-- Subheadline -->
+                        <p style="font-size: 1.25rem; line-height: 1.7; color: rgba(255,255,255,0.9); margin-bottom: 2rem; max-width: 600px;">
+                            20+ years building scalable revenue engines for Fortune 500 and high-growth SaaS companies. Strategic ABM, demand generation, and marketing operations excellence.
+                        </p>
+                        
+                        <!-- CTAs -->
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <a href="/contact/" class="btn-primary-brand" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; border-radius: 8px; font-weight: 600; text-decoration: none; color: white;">
+                                Schedule Consultation
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <a href="/projects/" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; border-radius: 8px; font-weight: 600; text-decoration: none; color: white; background: rgba(255,255,255,0.1); border: 2px solid rgba(255,255,255,0.3); backdrop-filter: blur(10px);">
+                                View Case Studies
+                            </a>
+                        </div>
+                        
+                        <!-- Stats -->
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; padding-top: 3rem; border-top: 1px solid rgba(255,255,255,0.2);">
+                            <div>
+                                <div style="font-size: 2.5rem; font-weight: 700; color: #3A7DFF;">$100M+</div>
+                                <div style="font-size: 0.875rem; color: rgba(255,255,255,0.7); margin-top: 0.25rem;">Pipeline Generated</div>
+                            </div>
+                            <div>
+                                <div style="font-size: 2.5rem; font-weight: 700; color: #A855FF;">300%</div>
+                                <div style="font-size: 0.875rem; color: rgba(255,255,255,0.7); margin-top: 0.25rem;">Avg Growth</div>
+                            </div>
+                            <div>
+                                <div style="font-size: 2.5rem; font-weight: 700; color: #4FD1C5;">20+</div>
+                                <div style="font-size: 0.875rem; color: rgba(255,255,255,0.7); margin-top: 0.25rem;">Years Experience</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column: Visual -->
+                    <div style="display: flex; align-items: center; justify-content: center;">
+                        <div style="width: 100%; height: 500px; background: linear-gradient(135deg, rgba(58,125,255,0.2) 0%, rgba(168,85,255,0.2) 100%); border-radius: 24px; border: 2px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; backdrop-filter: blur(20px);">
+                            <div style="text-align: center; color: white;">
+                                <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <circle cx="12" cy="12" r="6"></circle>
+                                    <circle cx="12" cy="12" r="2"></circle>
+                                </svg>
+                                <p style="margin-top: 1rem; font-size: 0.875rem; color: rgba(255,255,255,0.7);">Hero Visual Placeholder</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- SECONDARY HERO -->
+    <h3 style="font-size: 1.5rem; margin-bottom: 1rem; margin-top: 3rem;">Secondary Hero (About, Industries, Contact)</h3>
+    <div class="component-demo">
+        <section class="relative bg-navy overflow-hidden bg-route-lines" style="padding: 4rem 3rem;">
+            <div class="absolute inset-0 bg-grid-overlay" style="opacity: 0.2;"></div>
+            <div style="max-width: 1280px; margin: 0 auto; text-align: center; position: relative; z-index: 10;">
+                <h1 style="font-size: 3.5rem; font-weight: 700; color: white; margin-bottom: 1rem; letter-spacing: -0.02em;">
+                    About GTMstack.pro
+                </h1>
+                <p style="font-size: 1.25rem; color: rgba(255,255,255,0.9); max-width: 700px; margin: 0 auto;">
+                    Two decades of strategic go-to-market expertise delivering enterprise-grade results
+                </p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- ====================================================
+     2. NAVIGATION BAR COMPONENT
+     ==================================================== -->
+<div class="component-section">
+    <h2 class="component-title">2. Navigation Bar</h2>
+    <p class="component-description">Sticky navigation with deep navy background</p>
+    
+    <div class="component-demo">
+        <nav style="position: sticky; top: 0; z-index: 1000; background: #0A0F1F; border-bottom: 1px solid rgba(58,125,255,0.2); backdrop-filter: blur(10px);">
+            <div style="max-width: 1280px; margin: 0 auto; padding: 1rem 3rem; display: flex; align-items: center; justify-content: space-between;">
+                <!-- Logo -->
+                <a href="/" style="text-decoration: none;">
+                    <div style="font-size: 1.5rem; font-weight: 700; color: white;">
+                        GTMStack<span style="color: #3A7DFF;">.pro</span>
+                    </div>
+                </a>
+                
+                <!-- Navigation Links -->
+                <div style="display: flex; align-items: center; gap: 2rem;">
+                    <a href="/" style="color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9375rem; font-weight: 500; transition: color 0.2s;">Home</a>
+                    <a href="/about/" style="color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9375rem; font-weight: 500; transition: color 0.2s;">About</a>
+                    <a href="/expertise/" style="color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9375rem; font-weight: 500; transition: color 0.2s;">Expertise</a>
+                    <a href="/industries/" style="color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9375rem; font-weight: 500; transition: color 0.2s;">Industries</a>
+                    <a href="/projects/" style="color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9375rem; font-weight: 500; transition: color 0.2s;">Projects</a>
+                    <a href="/contact/" class="btn-primary-brand" style="padding: 0.625rem 1.5rem; border-radius: 6px; font-size: 0.9375rem; font-weight: 600; text-decoration: none; color: white;">
+                        Schedule Consultation
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<!-- ====================================================
+     3. SECTION HEADER COMPONENT
+     ==================================================== -->
+<div class="component-section">
+    <h2 class="component-title">3. Section Headers</h2>
+    
+    <div class="component-demo">
+        <div style="text-align: center; padding: 3rem 1.5rem; background: linear-gradient(135deg, #0A0F1F 0%, #3A7DFF 100%); position: relative; overflow: hidden;">
+            <div class="absolute inset-0 bg-topographic" style="opacity: 0.1;"></div>
+            <div style="position: relative; z-index: 10;">
+                <div style="display: inline-block; background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); padding: 0.5rem 1rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 600; color: white; margin-bottom: 1rem;">
+                    Expertise Areas
+                </div>
+                <h2 style="font-size: 3rem; font-weight: 700; color: white; margin-bottom: 1rem; letter-spacing: -0.02em;">
+                    Strategic <span class="text-gradient-brand" style="color: #4FD1C5;">GTM Capabilities</span>
+                </h2>
+                <p style="font-size: 1.25rem; color: rgba(255,255,255,0.9); max-width: 800px; margin: 0 auto;">
+                    Comprehensive go-to-market services built on two decades of enterprise experience
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ====================================================
+     4. CARD COMPONENTS
+     ==================================================== -->
+<div class="component-section">
+    <h2 class="component-title">4. Card Components</h2>
+    
+    <!-- SERVICE CARD -->
+    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Service Card (Expertise)</h3>
+    <div class="component-demo">
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+            <div class="card-hover" style="background: white; border: 2px solid #E5E7EB; border-radius: 12px; padding: 2rem; transition: all 0.3s;">
+                <div style="width: 64px; height: 64px; background: linear-gradient(135deg, #3A7DFF 0%, #7A4BFF 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <circle cx="12" cy="12" r="6"></circle>
+                        <circle cx="12" cy="12" r="2"></circle>
+                    </svg>
+                </div>
+                <h3 style="font-size: 1.5rem; font-weight: 700; color: #0A0F1F; margin-bottom: 0.75rem;">
+                    Account-Based Marketing
+                </h3>
+                <p style="color: #3A3F4B; line-height: 1.6; margin-bottom: 1.5rem;">
+                    Strategic ABM programs targeting high-value enterprise accounts with personalized campaigns and multi-touch engagement.
+                </p>
+                <a href="/expertise/account-based-marketing/" style="display: inline-flex; align-items: center; gap: 0.5rem; color: #3A7DFF; font-weight: 600; text-decoration: none; transition: gap 0.3s;">
+                    Learn More
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="card-hover" style="background: white; border: 2px solid #E5E7EB; border-radius: 12px; padding: 2rem; transition: all 0.3s;">
+                <div style="width: 64px; height: 64px; background: linear-gradient(135deg, #7A4BFF 0%, #A855FF 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                        <polyline points="16 7 22 7 22 13"></polyline>
+                    </svg>
+                </div>
+                <h3 style="font-size: 1.5rem; font-weight: 700; color: #0A0F1F; margin-bottom: 0.75rem;">
+                    Demand Generation
+                </h3>
+                <p style="color: #3A3F4B; line-height: 1.6; margin-bottom: 1.5rem;">
+                    Integrated campaigns generating qualified pipeline through strategic content, events, and digital programs.
+                </p>
+                <a href="/expertise/demand-generation/" style="display: inline-flex; align-items: center; gap: 0.5rem; color: #7A4BFF; font-weight: 600; text-decoration: none; transition: gap 0.3s;">
+                    Learn More
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="card-hover" style="background: white; border: 2px solid #E5E7EB; border-radius: 12px; padding: 2rem; transition: all 0.3s;">
+                <div style="width: 64px; height: 64px; background: linear-gradient(135deg, #4FD1C5 0%, #3A7DFF 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                    </svg>
+                </div>
+                <h3 style="font-size: 1.5rem; font-weight: 700; color: #0A0F1F; margin-bottom: 0.75rem;">
+                    Marketing Operations
+                </h3>
+                <p style="color: #3A3F4B; line-height: 1.6; margin-bottom: 1.5rem;">
+                    Building scalable infrastructure for marketing excellence—automation, analytics, and RevOps alignment.
+                </p>
+                <a href="/expertise/marketing-operations/" style="display: inline-flex; align-items: center; gap: 0.5rem; color: #4FD1C5; font-weight: 600; text-decoration: none; transition: gap 0.3s;">
+                    Learn More
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- INDUSTRY CARD -->
+    <h3 style="font-size: 1.5rem; margin-bottom: 1rem; margin-top: 3rem;">Industry Card</h3>
+    <div class="component-demo">
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+            <div class="card-hover" style="background: linear-gradient(135deg, #0A0F1F 0%, #3A7DFF 100%); border-radius: 16px; padding: 2.5rem; color: white; position: relative; overflow: hidden;">
+                <div class="absolute inset-0 bg-topographic" style="opacity: 0.1;"></div>
+                <div style="position: relative; z-index: 10;">
+                    <div style="width: 56px; height: 56px; background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/>
+                            <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
+                        </svg>
+                    </div>
+                    <h3 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem;">Financial Services</h3>
+                    <ul style="list-style: none; padding: 0; margin: 0; space-y: 0.75rem;">
+                        <li style="display: flex; align-items: start; gap: 0.75rem; margin-bottom: 0.75rem;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4FD1C5" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span style="color: rgba(255,255,255,0.9);">Navigate complex compliance requirements</span>
+                        </li>
+                        <li style="display: flex; align-items: start; gap: 0.75rem; margin-bottom: 0.75rem;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4FD1C5" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span style="color: rgba(255,255,255,0.9);">Enterprise-grade security messaging</span>
+                        </li>
+                        <li style="display: flex; align-items: start; gap: 0.75rem;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4FD1C5" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span style="color: rgba(255,255,255,0.9);">Multi-stakeholder buying committee engagement</span>
+                        </li>
+                    </ul>
+                    <a href="/industries/financial-services/" style="display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1.5rem; color: white; font-weight: 600; text-decoration: none; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.2);">
+                        Explore Industry
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="card-hover" style="background: linear-gradient(135deg, #7A4BFF 0%, #A855FF 100%); border-radius: 16px; padding: 2.5rem; color: white; position: relative; overflow: hidden;">
+                <div class="absolute inset-0 bg-route-lines" style="opacity: 0.1;"></div>
+                <div style="position: relative; z-index: 10;">
+                    <div style="width: 56px; height: 56px; background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M11 2v4M11 18v4"/>
+                            <path d="M5 2v2M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"/>
+                        </svg>
+                    </div>
+                    <h3 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem;">Healthcare</h3>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="display: flex; align-items: start; gap: 0.75rem; margin-bottom: 0.75rem;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4FD1C5" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span style="color: rgba(255,255,255,0.9);">HIPAA-compliant marketing programs</span>
+                        </li>
+                        <li style="display: flex; align-items: start; gap: 0.75rem; margin-bottom: 0.75rem;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4FD1C5" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span style="color: rgba(255,255,255,0.9);">Clinical outcomes-focused messaging</span>
+                        </li>
+                        <li style="display: flex; align-items: start; gap: 0.75rem;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4FD1C5" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span style="color: rgba(255,255,255,0.9);">Provider and payer audience targeting</span>
+                        </li>
+                    </ul>
+                    <a href="/industries/healthcare/" style="display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1.5rem; color: white; font-weight: 600; text-decoration: none; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.2);">
+                        Explore Industry
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- CASE STUDY CARD -->
+    <h3 style="font-size: 1.5rem; margin-bottom: 1rem; margin-top: 3rem;">Case Study Card</h3>
+    <div class="component-demo">
+        <div class="card-hover" style="background: white; border: 2px solid #E5E7EB; border-radius: 16px; overflow: hidden; transition: all 0.3s;">
+            <div style="height: 240px; background: linear-gradient(135deg, #0A0F1F 0%, #3A7DFF 100%); position: relative; overflow: hidden;">
+                <div class="absolute inset-0 bg-grid-overlay" style="opacity: 0.2;"></div>
+                <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
+                    <div style="background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); padding: 1rem 1.5rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.3);">
+                        <span style="color: white; font-size: 0.875rem; font-weight: 600;">Featured Case Study</span>
+                    </div>
+                </div>
+            </div>
+            <div style="padding: 2rem;">
+                <div style="display: inline-block; background: #E0E7FF; color: #3A7DFF; padding: 0.375rem 0.75rem; border-radius: 6px; font-size: 0.75rem; font-weight: 600; margin-bottom: 1rem;">
+                    Salesforce
+                </div>
+                <h3 style="font-size: 1.75rem; font-weight: 700; color: #0A0F1F; margin-bottom: 1rem;">
+                    Global Marketing Ops Transformation
+                </h3>
+                <div style="margin-bottom: 1.5rem;">
+                    <p style="color: #3A3F4B; line-height: 1.6; margin-bottom: 1rem;">
+                        <strong style="color: #0A0F1F;">Challenge:</strong> Manual reporting processes taking 4 days per cycle
+                    </p>
+                    <p style="color: #3A3F4B; line-height: 1.6; margin-bottom: 1rem;">
+                        <strong style="color: #0A0F1F;">Solution:</strong> Automated analytics platform with real-time dashboards
+                    </p>
+                    <p style="color: #3A3F4B; line-height: 1.6;">
+                        <strong style="color: #0A0F1F;">Outcome:</strong> +150% lead generation, 4 days → 2 hours reporting time
+                    </p>
+                </div>
+                <a href="/projects/salesforce-field-velocity/" class="btn-primary-brand" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; color: white;">
+                    Read Case Study
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ====================================================
+     5. CONTENT SECTION COMPONENTS
+     ==================================================== -->
+<div class="component-section">
+    <h2 class="component-title">5. Content Section Components</h2>
+    
+    <!-- TWO-COLUMN FEATURE -->
+    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Two-Column Feature Section</h3>
+    <div class="component-demo">
+        <section style="padding: 6rem 3rem; background: white;">
+            <div style="max-width: 1280px; margin: 0 auto;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                    <div>
+                        <div style="display: inline-block; background: #E0E7FF; color: #3A7DFF; padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.875rem; font-weight: 600; margin-bottom: 1rem;">
+                            Strategic Approach
+                        </div>
+                        <h2 style="font-size: 2.5rem; font-weight: 700; color: #0A0F1F; margin-bottom: 1.5rem; line-height: 1.2; letter-spacing: -0.02em;">
+                            Data-Driven <span class="text-gradient-brand">GTM Strategy</span>
+                        </h2>
+                        <p style="font-size: 1.125rem; color: #3A3F4B; line-height: 1.7; margin-bottom: 1.5rem;">
+                            Our approach combines quantitative analytics with qualitative market insights to build go-to-market strategies that scale. We don't just consult—we execute alongside your team.
+                        </p>
+                        <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+                            <li style="display: flex; align-items: start; gap: 0.75rem; margin-bottom: 1rem;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3A7DFF" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                <span style="color: #0A0F1F; font-weight: 500;">Market segmentation and ICP development</span>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 0.75rem; margin-bottom: 1rem;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3A7DFF" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                <span style="color: #0A0F1F; font-weight: 500;">Competitive positioning and messaging</span>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 0.75rem;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3A7DFF" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="m9 12 2 2 4-4"/>
+                                </svg>
+                                <span style="color: #0A0F1F; font-weight: 500;">Channel strategy and demand waterfall design</span>
+                            </li>
+                        </ul>
+                        <a href="/expertise/" class="btn-primary-brand" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 1.75rem; border-radius: 8px; font-weight: 600; text-decoration: none; color: white;">
+                            Explore Our Expertise
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div>
+                        <div style="background: linear-gradient(135deg, rgba(58,125,255,0.1) 0%, rgba(168,85,255,0.1) 100%); border-radius: 16px; padding: 3rem; border: 2px solid rgba(58,125,255,0.2);">
+                            <div style="text-align: center; color: #3A7DFF;">
+                                <svg width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <circle cx="12" cy="12" r="6"></circle>
+                                    <circle cx="12" cy="12" r="2"></circle>
+                                </svg>
+                                <p style="margin-top: 1rem; color: #3A3F4B; font-size: 0.875rem;">Visual Placeholder</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- STATISTICS MODULE -->
+    <h3 style="font-size: 1.5rem; margin-bottom: 1rem; margin-top: 3rem;">Statistics Module</h3>
+    <div class="component-demo">
+        <div style="background: linear-gradient(135deg, #0A0F1F 0%, #3A7DFF 100%); padding: 4rem 3rem; position: relative; overflow: hidden;">
+            <div class="absolute inset-0 bg-topographic" style="opacity: 0.1;"></div>
+            <div style="max-width: 1280px; margin: 0 auto; position: relative; z-index: 10;">
+                <h2 style="font-size: 2.5rem; font-weight: 700; color: white; text-align: center; margin-bottom: 3rem;">
+                    Proven Track Record of <span style="color: #4FD1C5;">Measurable Results</span>
+                </h2>
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 3rem;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 3.5rem; font-weight: 800; color: #3A7DFF; margin-bottom: 0.5rem;">$100M+</div>
+                        <div style="font-size: 1rem; color: rgba(255,255,255,0.9); font-weight: 500;">Pipeline Influenced</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 3.5rem; font-weight: 800; color: #A855FF; margin-bottom: 0.5rem;">300%</div>
+                        <div style="font-size: 1rem; color: rgba(255,255,255,0.9); font-weight: 500;">Average Growth Rate</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 3.5rem; font-weight: 800; color: #4FD1C5; margin-bottom: 0.5rem;">200+</div>
+                        <div style="font-size: 1rem; color: rgba(255,255,255,0.9); font-weight: 500;">Accounts Activated</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 3.5rem; font-weight: 800; color: #3A7DFF; margin-bottom: 0.5rem;">20+</div>
+                        <div style="font-size: 1rem; color: rgba(255,255,255,0.9); font-weight: 500;">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ====================================================
+     6. GTM FRAMEWORK & PROCESS COMPONENTS
+     ==================================================== -->
+<div class="component-section">
+    <h2 class="component-title">6. GTM Framework & Process Components</h2>
+    
+    <!-- 4-PILLAR FRAMEWORK -->
+    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">4-Pillar GTM Framework</h3>
+    <div class="component-demo">
+        <section style="padding: 6rem 3rem; background: #F5F7FA;">
+            <div style="max-width: 1280px; margin: 0 auto;">
+                <div style="text-align: center; margin-bottom: 4rem;">
+                    <div style="display: inline-block; background: white; border: 2px solid #3A7DFF; padding: 0.5rem 1rem; border-radius: 9999px; font-size: 0.875rem; font-weight: 600; color: #3A7DFF; margin-bottom: 1rem;">
+                        The GTMStack Framework™
+                    </div>
+                    <h2 style="font-size: 3rem; font-weight: 700; color: #0A0F1F; margin-bottom: 1rem; letter-spacing: -0.02em;">
+                        Four Pillars of <span class="text-gradient-brand">Revenue Excellence</span>
+                    </h2>
+                    <p style="font-size: 1.25rem; color: #3A3F4B; max-width: 800px; margin: 0 auto;">
+                        A comprehensive approach to building and scaling go-to-market operations
+                    </p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;">
+                    <!-- Pillar 1 -->
+                    <div class="card-hover" style="background: white; border: 2px solid #3A7DFF; border-radius: 16px; padding: 2rem; position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: 0; right: 0; width: 120px; height: 120px; background: rgba(58,125,255,0.1); border-radius: 50%; transform: translate(40px, -40px);"></div>
+                        <div style="position: relative; z-index: 10;">
+                            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem;">
+                                <div style="font-size: 3.5rem; font-weight: 900; color: rgba(58,125,255,0.15);">01</div>
+                                <div style="width: 56px; height: 56px; background: #3A7DFF; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                        <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/>
+                                        <path d="M9 18h6M10 22h4"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 style="font-size: 1.25rem; font-weight: 700; color: #0A0F1F; margin-bottom: 0.75rem;">Content & Engagement</h3>
+                            <p style="font-size: 0.875rem; color: #3A3F4B; line-height: 1.6; margin-bottom: 1rem;">
+                                Strategic storytelling that resonates with your ICP and moves them through the buyer journey
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; font-size: 0.875rem; color: #3A3F4B;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3A7DFF" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="m9 12 2 2 4-4"/>
+                                    </svg>
+                                    Content Strategy
+                                </li>
+                                <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; font-size: 0.875rem; color: #3A3F4B;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3A7DFF" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="m9 12 2 2 4-4"/>
+                                    </svg>
+                                    SEO & Organic
+                                </li>
+                                <li style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: #3A3F4B;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3A7DFF" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="m9 12 2 2 4-4"/>
+                                    </svg>
+                                    Email Marketing
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Pillar 2 -->
+                    <div class="card-hover" style="background: white; border: 2px solid #7A4BFF; border-radius: 16px; padding: 2rem; position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: 0; right: 0; width: 120px; height: 120px; background: rgba(122,75,255,0.1); border-radius: 50%; transform: translate(40px, -40px);"></div>
+                        <div style="position: relative; z-index: 10;">
+                            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem;">
+                                <div style="font-size: 3.5rem; font-weight: 900; color: rgba(122,75,255,0.15);">02</div>
+                                <div style="width: 56px; height: 56px; background: #7A4BFF; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                        <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+                                        <polyline points="16 7 22 7 22 13"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 style="font-size: 1.25rem; font-weight: 700; color: #0A0F1F; margin-bottom: 0.75rem;">Demand & Growth</h3>
+                            <p style="font-size: 0.875rem; color: #3A3F4B; line-height: 1.6; margin-bottom: 1rem;">
+                                Integrated campaigns generating qualified pipeline and accelerating revenue growth
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; font-size: 0.875rem; color: #3A3F4B;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7A4BFF" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="m9 12 2 2 4-4"/>
+                                    </svg>
+                                    Demand Generation
+                                </li>
+                                <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; font-size: 0.875rem; color: #3A3F4B;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7A4BFF" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="m9 12 2 2 4-4"/>
+                                    </svg>
+                                    ABM Programs
+                                </li>
+                                <li style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: #3A3F4B;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7A4BFF" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="m9 12 2 2 4-4"/>
+                                    </svg>
+                                    Paid Advertising
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Pillar 3 -->
+                    <div class="card-hover" style="background: white; border: 2px solid #A855FF; border-radius: 16px; padding: 2rem; position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: 0; right: 0; width: 120px; height: 120px; background: rgba(168,85,255,0.1); border-radius: 50%; transform: translate(40px, -40px);"></div>
+                        <div style="position: relative; z-index: 10;">
+                            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem;">
+                                <div style="font-size: 3.5rem; font-weight: 900; color: rgba(168,85,255,0.15);">03</div>
+                                <div style="width: 56px; height: 56px; background: #A855FF; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <circle cx="12" cy="12" r="6"/>
+                                        <circle cx="12" cy="12" r="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 style="font-size: 1.25rem; font-weight: 700; color: #0A0F1F; margin-bottom: 0.75rem;">Strategy & Insights</h3>
+                            <p style="font-size: 0.875rem; color: #3A3F4B; line-height: 1.6; margin-bottom: 1rem;">
+                                Data-driven approaches to customer acquisition, retention, and expansion
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; font-size: 0.875rem; color: #3A3F4B;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A855FF" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="m9 12 2 2 4-4"/>
+                                    </svg>
+                                    Customer Experience
+                                </li>
+                                <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; font-size: 0.875rem; color: #3A3F4B;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A855FF" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="m9 12 2 2 4-4"/>
+                                    </svg>
+                                    Lifecycle Marketing
+                                </li>
+                                <li style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: #3A3F4B;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A855FF" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="m9 12 2 2 4-4"/>
+                                    </svg>
+                                    Market Research
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Pillar 4 -->
+                    <div class="card-hover" style="background: white; border: 2px solid #4FD1C5; border-radius: 16px; padding: 2rem; position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: 0; right: 0; width: 120px; height: 120px; background: rgba(79,209,197,0.1); border-radius: 50%; transform: translate(40px, -40px);"></div>
+                        <div style="position: relative; z-index: 10;">
+                            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem;">
+                                <div style="font-size: 3.5rem; font-weight: 900; color: rgba(79,209,197,0.15);">04</div>
+                                <div style="width: 56px; height: 56px; background: #4FD1C5; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                        <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 style="font-size: 1.25rem; font-weight: 700; color: #0A0F1F; margin-bottom: 0.75rem;">Systems & Operations</h3>
+                            <p style="font-size: 0.875rem; color: #3A3F4B; line-height: 1.6; margin-bottom: 1rem;">
+                                Building scalable infrastructure for marketing and revenue excellence
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; font-size: 0.875rem; color: #3A3F4B;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4FD1C5" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="m9 12 2 2 4-4"/>
+                                    </svg>
+                                    Marketing Ops
+                                </li>
+                                <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; font-size: 0.875rem; color: #3A3F4B;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4FD1C5" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="m9 12 2 2 4-4"/>
+                                    </svg>
+                                    Marketing Automation
+                                </li>
+                                <li style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: #3A3F4B;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4FD1C5" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="m9 12 2 2 4-4"/>
+                                    </svg>
+                                    AI Integration
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- JOURNEY/PROCESS MODULE -->
+    <h3 style="font-size: 1.5rem; margin-bottom: 1rem; margin-top: 3rem;">Journey Process (4-Step)</h3>
+    <div class="component-demo">
+        <section style="padding: 6rem 3rem; background: white;">
+            <div style="max-width: 1280px; margin: 0 auto;">
+                <div style="text-align: center; margin-bottom: 4rem;">
+                    <h2 style="font-size: 3rem; font-weight: 700; color: #0A0F1F; margin-bottom: 1rem;">
+                        Your <span class="text-gradient-brand">GTM Journey</span>
+                    </h2>
+                    <p style="font-size: 1.25rem; color: #3A3F4B; max-width: 800px; margin: 0 auto;">
+                        A proven methodology for delivering strategic impact—from discovery to sustained growth
+                    </p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; position: relative;">
+                    <!-- Connecting Line -->
+                    <div style="position: absolute; top: 48px; left: 10%; right: 10%; height: 2px; background: linear-gradient(to right, #3A7DFF, #A855FF); z-index: 0;"></div>
+                    
+                    <!-- Step 1 -->
+                    <div style="text-align: center; position: relative; z-index: 10;">
+                        <div style="width: 96px; height: 96px; background: linear-gradient(135deg, #3A7DFF 0%, #7A4BFF 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 8px 24px rgba(58,125,255,0.3);">
+                            <div style="color: white; font-size: 2rem; font-weight: 800;">01</div>
+                        </div>
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#3A7DFF" stroke-width="2" style="margin: 0 auto 1rem;">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="6"/>
+                            <circle cx="12" cy="12" r="2"/>
+                        </svg>
+                        <h3 style="font-size: 1.25rem; font-weight: 700; color: #0A0F1F; margin-bottom: 0.75rem;">Discovery & Audit</h3>
+                        <p style="font-size: 0.9375rem; color: #3A3F4B; line-height: 1.6;">
+                            Deep dive into your GTM operations, tech stack, and growth goals
+                        </p>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div style="text-align: center; position: relative; z-index: 10;">
+                        <div style="width: 96px; height: 96px; background: linear-gradient(135deg, #7A4BFF 0%, #A855FF 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 8px 24px rgba(122,75,255,0.3);">
+                            <div style="color: white; font-size: 2rem; font-weight: 800;">02</div>
+                        </div>
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#7A4BFF" stroke-width="2" style="margin: 0 auto 1rem;">
+                            <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/>
+                            <path d="M9 18h6M10 22h4"/>
+                        </svg>
+                        <h3 style="font-size: 1.25rem; font-weight: 700; color: #0A0F1F; margin-bottom: 0.75rem;">Strategy Design</h3>
+                        <p style="font-size: 0.9375rem; color: #3A3F4B; line-height: 1.6;">
+                            Build a customized roadmap aligned to your business objectives
+                        </p>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div style="text-align: center; position: relative; z-index: 10;">
+                        <div style="width: 96px; height: 96px; background: linear-gradient(135deg, #A855FF 0%, #4FD1C5 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 8px 24px rgba(168,85,255,0.3);">
+                            <div style="color: white; font-size: 2rem; font-weight: 800;">03</div>
+                        </div>
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#A855FF" stroke-width="2" style="margin: 0 auto 1rem;">
+                            <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/>
+                        </svg>
+                        <h3 style="font-size: 1.25rem; font-weight: 700; color: #0A0F1F; margin-bottom: 0.75rem;">Implementation</h3>
+                        <p style="font-size: 0.9375rem; color: #3A3F4B; line-height: 1.6;">
+                            Hands-on execution of campaigns, systems, and operations
+                        </p>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div style="text-align: center; position: relative; z-index: 10;">
+                        <div style="width: 96px; height: 96px; background: linear-gradient(135deg, #4FD1C5 0%, #3A7DFF 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 8px 24px rgba(79,209,197,0.3);">
+                            <div style="color: white; font-size: 2rem; font-weight: 800;">04</div>
+                        </div>
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#4FD1C5" stroke-width="2" style="margin: 0 auto 1rem;">
+                            <path d="M3 3v16a2 2 0 0 0 2 2h16"/>
+                            <path d="M18 17V9M13 17V5M8 17v-3"/>
+                        </svg>
+                        <h3 style="font-size: 1.25rem; font-weight: 700; color: #0A0F1F; margin-bottom: 0.75rem;">Optimization</h3>
+                        <p style="font-size: 0.9375rem; color: #3A3F4B; line-height: 1.6;">
+                            Continuous testing, measurement, and improvement for sustained ROI
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- ====================================================
+     7. CTA COMPONENTS
+     ==================================================== -->
+<div class="component-section">
+    <h2 class="component-title">7. CTA Components</h2>
+    
+    <!-- PRIMARY CTA -->
+    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Primary CTA Block</h3>
+    <div class="component-demo">
+        <section class="relative hero-navy bg-route-lines overflow-hidden" style="padding: 6rem 3rem;">
+            <div class="absolute inset-0 bg-grid-overlay" style="opacity: 0.15;"></div>
+            <div style="max-width: 1280px; margin: 0 auto; text-align: center; position: relative; z-index: 10;">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" style="margin: 0 auto 2rem;">
+                    <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/>
+                    <circle cx="12" cy="8" r="6"/>
+                </svg>
+                <h2 style="font-size: 3.5rem; font-weight: 700; color: white; margin-bottom: 1.5rem; letter-spacing: -0.02em;">
+                    Ready to Transform Your Revenue Engine?
+                </h2>
+                <p style="font-size: 1.25rem; color: rgba(255,255,255,0.9); max-width: 700px; margin: 0 auto 2.5rem;">
+                    Let's discuss how strategic GTM expertise can accelerate your growth. Book a free 30-minute consultation.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-center; flex-wrap: wrap;">
+                    <a href="/contact/" style="display: inline-flex; align-items: center; gap: 0.75rem; padding: 1.125rem 2.5rem; background: white; color: #0A0F1F; border-radius: 8px; font-size: 1.125rem; font-weight: 600; text-decoration: none; box-shadow: 0 12px 32px rgba(255,255,255,0.2); transition: all 0.3s;">
+                        Schedule Consultation
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="/projects/" style="display: inline-flex; align-items: center; gap: 0.75rem; padding: 1.125rem 2.5rem; background: rgba(255,255,255,0.1); color: white; border: 2px solid rgba(255,255,255,0.3); backdrop-filter: blur(10px); border-radius: 8px; font-size: 1.125rem; font-weight: 600; text-decoration: none; transition: all 0.3s;">
+                        View Case Studies
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- ====================================================
+     9. FOOTER COMPONENT
+     ==================================================== -->
+<div class="component-section">
+    <h2 class="component-title">9. Footer Component</h2>
+    
+    <div class="component-demo">
+        <footer style="background: #0A0F1F; border-top: 1px solid rgba(58,125,255,0.2); padding: 4rem 3rem 2rem;">
+            <div style="max-width: 1280px; margin: 0 auto;">
+                <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem;">
+                    <!-- Column 1: Brand -->
+                    <div>
+                        <div style="font-size: 1.5rem; font-weight: 700; color: white; margin-bottom: 1rem;">
+                            GTMStack<span style="color: #3A7DFF;">.pro</span>
+                        </div>
+                        <p style="color: rgba(255,255,255,0.7); line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.9375rem;">
+                            Strategic Go-To-Market consulting for B2B SaaS and enterprise growth leaders. 20+ years of proven expertise.
+                        </p>
+                        <a href="/contact/" class="btn-primary-brand" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; border-radius: 8px; font-size: 0.9375rem; font-weight: 600; text-decoration: none; color: white;">
+                            Work With Us
+                        </a>
+                    </div>
+                    
+                    <!-- Column 2: Navigation -->
+                    <div>
+                        <h4 style="color: white; font-weight: 600; margin-bottom: 1rem; font-size: 0.9375rem;">Navigation</h4>
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <li style="margin-bottom: 0.75rem;">
+                                <a href="/about/" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9375rem; transition: color 0.2s;">About</a>
+                            </li>
+                            <li style="margin-bottom: 0.75rem;">
+                                <a href="/expertise/" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9375rem; transition: color 0.2s;">Expertise</a>
+                            </li>
+                            <li style="margin-bottom: 0.75rem;">
+                                <a href="/industries/" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9375rem; transition: color 0.2s;">Industries</a>
+                            </li>
+                            <li style="margin-bottom: 0.75rem;">
+                                <a href="/projects/" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9375rem; transition: color 0.2s;">Case Studies</a>
+                            </li>
+                            <li>
+                                <a href="/contact/" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9375rem; transition: color 0.2s;">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 3: Services -->
+                    <div>
+                        <h4 style="color: white; font-weight: 600; margin-bottom: 1rem; font-size: 0.9375rem;">Services</h4>
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <li style="margin-bottom: 0.75rem;">
+                                <a href="/expertise/account-based-marketing/" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9375rem; transition: color 0.2s;">ABM</a>
+                            </li>
+                            <li style="margin-bottom: 0.75rem;">
+                                <a href="/expertise/demand-generation/" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9375rem; transition: color 0.2s;">Demand Generation</a>
+                            </li>
+                            <li style="margin-bottom: 0.75rem;">
+                                <a href="/expertise/marketing-operations/" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9375rem; transition: color 0.2s;">Marketing Ops</a>
+                            </li>
+                            <li>
+                                <a href="/expertise/content-marketing/" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9375rem; transition: color 0.2s;">Content Strategy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 4: Connect -->
+                    <div>
+                        <h4 style="color: white; font-weight: 600; margin-bottom: 1rem; font-size: 0.9375rem;">Connect</h4>
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <li style="margin-bottom: 0.75rem;">
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9375rem; transition: color 0.2s;">LinkedIn</a>
+                            </li>
+                            <li style="margin-bottom: 0.75rem;">
+                                <a href="/contact/" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9375rem; transition: color 0.2s;">Schedule Call</a>
+                            </li>
+                            <li>
+                                <a href="mailto:hello@gtmstack.pro" style="color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9375rem; transition: color 0.2s;">Email Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Bottom Bar -->
+                <div style="padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); text-align: center;">
+                    <p style="color: rgba(255,255,255,0.5); font-size: 0.875rem; margin: 0;">
+                        © 2025 GTMStack.pro. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<!-- ====================================================
+     USAGE INSTRUCTIONS
+     ==================================================== -->
+<div style="background: #F5F7FA; padding: 4rem 3rem;">
+    <div style="max-width: 1280px; margin: 0 auto;">
+        <h2 style="font-size: 2.5rem; font-weight: 700; color: #0A0F1F; margin-bottom: 2rem;">Usage Instructions</h2>
+        
+        <div style="background: white; border: 2px solid #3A7DFF; border-radius: 12px; padding: 2rem; margin-bottom: 2rem;">
+            <h3 style="color: #3A7DFF; font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;">How to Use This Library</h3>
+            <ol style="color: #3A3F4B; line-height: 1.8; padding-left: 1.5rem;">
+                <li style="margin-bottom: 1rem;"><strong>Copy Component HTML:</strong> Find the component you need and copy the entire HTML block</li>
+                <li style="margin-bottom: 1rem;"><strong>Paste into Page:</strong> Insert into your static HTML page where needed</li>
+                <li style="margin-bottom: 1rem;"><strong>Customize Content:</strong> Replace placeholder text with actual content</li>
+                <li style="margin-bottom: 1rem;"><strong>Update Links:</strong> Change href values to match your site structure</li>
+                <li><strong>Test Responsive:</strong> Verify on mobile, tablet, and desktop</li>
+            </ol>
+        </div>
+        
+        <div style="background: white; border: 2px solid #A855FF; border-radius: 12px; padding: 2rem;">
+            <h3 style="color: #A855FF; font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;">Brand System Compliance</h3>
+            <ul style="color: #3A3F4B; line-height: 1.8; padding-left: 1.5rem; list-style: none;">
+                <li style="margin-bottom: 0.75rem; display: flex; align-items: start; gap: 0.75rem;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A855FF" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                    All components use Deep Navy (#0A0F1F) for dark sections
+                </li>
+                <li style="margin-bottom: 0.75rem; display: flex; align-items: start; gap: 0.75rem;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A855FF" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                    Electric Blue → Purple gradients for CTAs and accents
+                </li>
+                <li style="margin-bottom: 0.75rem; display: flex; align-items: start; gap: 0.75rem;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A855FF" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                    Navigation motifs (topographic, grid, route lines) in backgrounds
+                </li>
+                <li style="margin-bottom: 0.75rem; display: flex; align-items: start; gap: 0.75rem;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A855FF" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                    Consulting-quality typography (bold headings, clean body)
+                </li>
+                <li style="display: flex; align-items: start; gap: 0.75rem;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A855FF" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                    Every section includes visual elements (no plain text sections)
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
