@@ -1,0 +1,262 @@
+/* ========================================
+   GTMstack.pro Brand System CSS
+   Navigate Your GTM Journey
+   ======================================== */
+
+/* ========================================
+   1. CSS CUSTOM PROPERTIES (Brand Colors)
+   ======================================== */
+:root {
+  /* Foundation Color */
+  --color-navy: #0A0F1F;
+  
+  /* Accent Colors (Premium Gradient System) */
+  --color-electric-blue: #3A7DFF;
+  --color-ultramarine: #4F5FFF;
+  --color-violet: #7A4BFF;
+  --color-electric-purple: #A855FF;
+  
+  /* Secondary Palette */
+  --color-teal: #4FD1C5;
+  --color-cool-gray: #F5F7FA;
+  --color-slate: #3A3F4B;
+  --color-white: #FFFFFF;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #0A0F1F 0%, #3A7DFF 100%);
+  --gradient-accent: linear-gradient(90deg, #3A7DFF 0%, #7A4BFF 50%, #A855FF 100%);
+  --gradient-hero: linear-gradient(135deg, #0A0F1F 0%, #3A7DFF 100%);
+  --gradient-radial: radial-gradient(circle at 30% 50%, #4F5FFF 0%, #0A0F1F 70%);
+}
+
+/* ========================================
+   2. NAVIGATION / JOURNEY MOTIFS
+   ======================================== */
+
+/* Topographic Contour Pattern */
+.bg-topographic {
+  background-image: 
+    repeating-linear-gradient(
+      0deg, 
+      transparent, 
+      transparent 20px, 
+      rgba(58, 125, 255, 0.03) 20px, 
+      rgba(58, 125, 255, 0.03) 21px
+    ),
+    repeating-linear-gradient(
+      90deg, 
+      transparent, 
+      transparent 20px, 
+      rgba(58, 125, 255, 0.03) 20px, 
+      rgba(58, 125, 255, 0.03) 21px
+    );
+}
+
+/* Grid Overlay Pattern */
+.bg-grid-overlay {
+  background-image: 
+    linear-gradient(rgba(58, 125, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(58, 125, 255, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Route Lines Pattern */
+.bg-route-lines {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 30h60' stroke='%233A7DFF' stroke-width='0.5' stroke-dasharray='5,5' opacity='0.1'/%3E%3C/svg%3E");
+}
+
+/* ========================================
+   3. BRAND COLOR OVERRIDES
+   ======================================== */
+
+/* Update Hero Section to Deep Navy */
+.hero-navy {
+  background: var(--gradient-primary) !important;
+  color: var(--color-white) !important;
+}
+
+.hero-navy h1,
+.hero-navy h2,
+.hero-navy p {
+  color: var(--color-white) !important;
+}
+
+/* Update gradient text to use new accent gradient */
+.text-gradient-brand {
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Navy Background Sections */
+.bg-navy {
+  background: var(--color-navy) !important;
+  color: var(--color-white) !important;
+}
+
+.bg-navy h2,
+.bg-navy h3,
+.bg-navy h4,
+.bg-navy p {
+  color: var(--color-white) !important;
+}
+
+/* Update existing gradient overlays */
+.bg-gradient-to-br.from-slate-900 {
+  background: linear-gradient(to bottom right, var(--color-navy), var(--color-ultramarine)) !important;
+}
+
+/* ========================================
+   4. BUTTON UPDATES (Premium Style)
+   ======================================== */
+
+/* Primary CTA Button */
+.btn-primary-brand {
+  background: var(--gradient-accent) !important;
+  color: var(--color-white) !important;
+  box-shadow: 0 4px 14px rgba(58, 125, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-primary-brand:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(58, 125, 255, 0.4);
+}
+
+/* Update existing button gradients */
+.bg-gradient-to-r.from-blue-600.to-blue-700,
+.bg-gradient-to-r.from-blue-600.to-purple-600 {
+  background: var(--gradient-accent) !important;
+}
+
+/* ========================================
+   5. CARD HOVER EFFECTS
+   ======================================== */
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(58, 125, 255, 0.15);
+}
+
+/* ========================================
+   6. NAVIGATION BAR STYLING
+   ======================================== */
+
+header {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-bottom: 1px solid rgba(10, 15, 31, 0.1) !important;
+}
+
+/* ========================================
+   7. SECTION SPACING & LAYOUT
+   ======================================== */
+
+.section-spacing {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+@media (max-width: 768px) {
+  .section-spacing {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+/* ========================================
+   8. TYPOGRAPHY ENHANCEMENTS
+   ======================================== */
+
+h1, h2, h3, h4 {
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+/* ========================================
+   9. FOOTER UPDATES
+   ======================================== */
+
+footer {
+  background: var(--color-navy) !important;
+  color: var(--color-white) !important;
+  border-top: 1px solid rgba(58, 125, 255, 0.2) !important;
+}
+
+footer h4,
+footer p,
+footer a {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+footer a:hover {
+  color: var(--color-electric-blue) !important;
+}
+
+/* ========================================
+   10. ANIMATION & TRANSITIONS
+   ======================================== */
+
+* {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-hover,
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+/* ========================================
+   11. ACCESSIBILITY (Focus States)
+   ======================================== */
+
+*:focus-visible {
+  outline: 3px solid var(--color-electric-blue);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ========================================
+   12. UTILITY CLASSES
+   ======================================== */
+
+.text-navy {
+  color: var(--color-navy) !important;
+}
+
+.text-electric-blue {
+  color: var(--color-electric-blue) !important;
+}
+
+.bg-electric-blue {
+  background-color: var(--color-electric-blue) !important;
+}
+
+.border-electric-blue {
+  border-color: var(--color-electric-blue) !important;
+}
