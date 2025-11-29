@@ -4,6 +4,9 @@
 
 The project preview is now serving the static HTML website with the complete brand system applied.
 
+**Root Entry Point:** `/app/index.html` is served at the preview root URL  
+**All Routes:** Properly configured to serve static HTML files
+
 ---
 
 ## Configuration Details
